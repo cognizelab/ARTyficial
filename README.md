@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18378488.svg)](https://doi.org/10.5281/zenodo.18378488)
+
 # Repository for "The latent neural architecture of human aesthetic experience"
 Authors: Xinyu Liang, Kaixiang Zhuang, Yun Wang, Yueting Su, Jianfeng Feng, Zhou Feng, Benjamin Becker and Deniz Vatansever
 
