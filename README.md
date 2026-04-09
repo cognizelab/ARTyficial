@@ -1,4 +1,4 @@
-<!-- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19486642.svg)](https://doi.org/10.5281/zenodo.19486642) --> 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19486642.svg)](https://doi.org/10.5281/zenodo.19486642)
 
 # Repository for "Latent Neural Architecture Organizing Shared Aesthetic Evaluations of Visual Artworks"
 Authors: Xinyu Liang, Kaixiang Zhuang, Yun Wang, Yueting Su, Jianfeng Feng, Zhou Feng, Benjamin Becker and Deniz Vatansever
