@@ -1,6 +1,6 @@
 <!-- [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18378488.svg)](https://doi.org/10.5281/zenodo.18378488) --> 
 
-# Repository for "The latent neural architecture of human aesthetic experience"
+# Repository for "Latent Neural Architecture Organizing Shared Aesthetic Evaluations of Visual Artworks"
 Authors: Xinyu Liang, Kaixiang Zhuang, Yun Wang, Yueting Su, Jianfeng Feng, Zhou Feng, Benjamin Becker and Deniz Vatansever
 
 This repository contains the codes used for analyses and figures in our manuscript "The latent neural architecture of human aesthetic experience".
