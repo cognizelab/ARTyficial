@@ -20,15 +20,23 @@ AAT_RSM = corr(AAT_ratings_final','type','Pearson');
 [coeff, score, latent, tsquared, explained, mu] = pca(AAT_RSM);
 
 % retain the first two PC dimensions according to the scree plot
+% (due to the negative correlation between 2nd dimension and average
+% ratings, we flipped the direction of 2nd dimension for better interpreting)
+%
 scree_plot(explained(1:10))
 dm1=score(:,1);
 dm2=-score(:,2); % change the direction for better visualization
 
 % load the semantic PC score from MAT task
+load('../Validation_codes/MAT/MAT_avg.mat')
+[coeff_mat, score_mat, latent_mat, tsquared_mat, explained_mat, mu_mat] = pca(MAT_avg);
+MAT_PCs = score_mat(:,1:10);
 
-% estimate the behaviour relevance for each dimension
-[R_dm1xgavg,P_dm1xgvag] = corr(dm1,score_gavg,'type','Pearson');
-[R_dm2xgavg,P_dm2xgvag] = corr(dm2,score_gavg,'type','Pearson');
+% double dissociation
+[r_dm1xMAT, p_dm1xMAT] = partialcorr(dm1,MAT_PCs(:,1),score_gavg);
+[r_dm2xMAT, p_dm2xMAT] = partialcorr(dm2,MAT_PCs(:,1),score_gavg);
+[r_dm1xAAT, p_dm1xAAT] = partialcorr(dm2,score_gavg,MAT_PCs(:,1));
+[r_dm2xAAT, p_dm2xAAT] = partialcorr(dm2,score_gavg,MAT_PCs(:,1));
 
 % estimate the relationship between dimensions and AI generated score
 load('../Figure_codes/Figure_data/MUSIQ_AVA_score.mat');
@@ -36,9 +44,6 @@ load('../Figure_codes/Figure_data/MUSIQ_AVA_score.mat');
 [R_dm2xAI,p_dm2xAI] = corr(zscore(AIscore),dm2);
 
 % we further quantized the scores on each dimenion to four quartile levels 
-% (due to the negative correlation between 2nd dimension and average
-% ratings, we flipped the direction of 2nd dimension for better interpreting)
-%
 
 grad_num = 4;
 grad_thr = (1:(grad_num-1))/grad_num;
