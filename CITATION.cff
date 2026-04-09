@@ -1,0 +1,24 @@
+cff-version: 1.1.0
+message: "If you use this code, please cite it as below."
+authors:
+- family-names: Liang
+  given-names: Xinyu 
+  orcid: <https://orcid.org/0000-0001-6132-3354>
+- family-names: Zhuang
+  given-names: Kaixiang
+- family-names: Wang
+  given-names: Yun
+- family-names: Su
+  given-names: Yueting
+- family-names: Feng
+  given-names: Jianfeng
+- family-names: Zhou
+  given-names: Feng
+- family-names: Becker
+  given-names: Benjamin 
+- family-names: Vatansever
+  given-names: Deniz
+  orcid: <https://orcid.org/0000-0002-2494-9945>
+title: Latent Neural Architecture Organizing Shared Aesthetic Evaluations of Visual Artworks
+version: v1
+date-released: 2026-04-09
